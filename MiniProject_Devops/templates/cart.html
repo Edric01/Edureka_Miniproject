@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{%block body%}
+Cart
+{% for x in cart %}
+    <div>{{x.Name}}</div>
+    <div>{{x.price}}</div>
+{% endfor %}
+
+Total: {{Total}}
+{%endblock body%}
